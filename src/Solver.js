@@ -2,7 +2,7 @@
 const DICTIONARY = ["hello", "weekday", "greyhound"]
 const MAXBOARDLENGTH = 9
 
-function solve(arg) {
+const solve = (arg) => {
     if (typeof(arg) !== `string`) {
         throw `not a string`
     }
