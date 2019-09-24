@@ -3,7 +3,7 @@ const MAXBOARDLENGTH = 9
 const MAXCONSONANTS = 6
 const MAXVOWELS = 5
 
-class Countdown {
+class PuzzleGenerator {
   constructor() {
     this.board = [];
     this.numberOfConsonants = EMPTYBOARD
@@ -62,4 +62,4 @@ class Countdown {
   }
 
 }
-export default Countdown
+export default PuzzleGenerator

@@ -1,10 +1,10 @@
-import Countdown from './Countdown'
+import PuzzleGenerator from './PuzzleGenerator'
 
 describe("Countdown", () => {
   var game;
 
   beforeEach(() => {
-    game = new Countdown;
+    game = new PuzzleGenerator;
   });
 
   it("should start with an empty board", () => {
