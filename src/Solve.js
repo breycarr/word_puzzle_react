@@ -2,9 +2,11 @@
 const DICTIONARY = ["hello", "weekday", "greyhound"]
 const MAXBOARDLENGTH = 9
 
+var errNotString = `not a string`
+
 const solve = (arg) => {
     if (typeof(arg) !== `string`) {
-        throw `not a string`
+        throw new Error(errNotString)
     }
 
     var score = 0

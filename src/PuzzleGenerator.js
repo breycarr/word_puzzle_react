@@ -3,6 +3,10 @@ const MAXBOARDLENGTH = 9
 const MAXCONSONANTS = 6
 const MAXVOWELS = 5
 
+var errMaxBoardLength = `The board can only be ${MAXBOARDLENGTH} letters!`
+var errMaxConsonants = `The board can only have ${MAXCONSONANTS} consonants`
+var errMaxVowels = `The board can only have ${MAXVOWELS} vowels`
+
 class PuzzleGenerator {
   constructor() {
     this.board = [];
@@ -33,7 +37,7 @@ class PuzzleGenerator {
 
   boardLengthCheck = () => {
     if (this.board.length >= MAXBOARDLENGTH) {
-      throw `The board can only be ${MAXBOARDLENGTH} letters!`;
+      throw new Error(errMaxBoardLength);
     }
   }
 
@@ -41,7 +45,7 @@ class PuzzleGenerator {
     this.boardLengthCheck();
 
     if (this.numberOfConsonants >= MAXCONSONANTS) {
-      throw `The board can only have ${MAXCONSONANTS} consonants`;
+      throw new Error(errMaxConsonants);
     }
     
     var letter = this.getLetter("consonant");
@@ -53,7 +57,7 @@ class PuzzleGenerator {
     this.boardLengthCheck();
 
     if (this.numberOfVowels >= MAXVOWELS) {
-      throw `The board can only have ${MAXVOWELS} vowels`;
+      throw new Error(errMaxVowels);
     }
 
     var letter = this.getLetter("vowel");

@@ -4,7 +4,7 @@ describe("Countdown", () => {
   var game;
 
   beforeEach(() => {
-    game = new PuzzleGenerator;
+    game = new PuzzleGenerator();
   });
 
   it("should start with an empty board", () => {
@@ -39,7 +39,7 @@ describe("Countdown", () => {
     it("should be a maximum of 9 letters", () => {
       for (var i = 0; i < 4; i++)
         game.vowel();
-      for (var i = 0; i < 5; i++)
+      for (var x = 0; x < 5; x++)
         game.consonant();
       expect(() => { game.consonant(); }).toThrow('The board can only be 9 letters!')
     });
