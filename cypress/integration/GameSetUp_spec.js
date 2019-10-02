@@ -10,5 +10,6 @@ describe("game set up", () => {
 
     it('Starts a new game', () => {
         cy.contains('New Game').click()
+        cy.contains('Choose Your Letters')
     })
 })

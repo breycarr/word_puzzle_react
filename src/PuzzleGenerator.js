@@ -7,7 +7,7 @@ var errMaxBoardLength = `The board can only be ${MAXBOARDLENGTH} letters!`
 var errMaxConsonants = `The board can only have ${MAXCONSONANTS} consonants`
 var errMaxVowels = `The board can only have ${MAXVOWELS} vowels`
 
-class PuzzleGenerator {
+export class PuzzleGenerator {
   constructor() {
     this.board = [];
     this.numberOfConsonants = EMPTYBOARD
@@ -66,4 +66,3 @@ class PuzzleGenerator {
   }
 
 }
-export default PuzzleGenerator
