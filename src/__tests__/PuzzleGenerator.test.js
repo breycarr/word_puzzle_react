@@ -1,4 +1,4 @@
-import PuzzleGenerator from './PuzzleGenerator'
+import { PuzzleGenerator } from '../PuzzleGenerator'
 
 describe("Countdown", () => {
   var game;

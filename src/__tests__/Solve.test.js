@@ -1,4 +1,4 @@
-import solve from './Solve'
+import { solve } from '../Solve'
 
 describe("#solve", () => {
     it("should accept a string", () => {

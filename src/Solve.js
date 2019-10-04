@@ -4,7 +4,7 @@ const MAXBOARDLENGTH = 9
 
 var errNotString = `not a string`
 
-const solve = (arg) => {
+export const solve = (arg) => {
     if (typeof(arg) !== `string`) {
         throw new Error(errNotString)
     }
@@ -17,5 +17,3 @@ const solve = (arg) => {
 
     return score
 }
-
-export default solve
