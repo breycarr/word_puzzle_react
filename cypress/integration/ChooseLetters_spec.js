@@ -6,13 +6,15 @@ describe("choosing letters", () => {
     
     describe('Consonant button', () => {
         it("produces a consonant", () => {
-            cy.contains('Consonant').click
+            cy.contains('Consonant').click();
+            cy.contains('Your letters are:');
         });
     });
 
     describe('Vowel button', () => {
         it("produces a vowel", () => {
-            cy.contains('Vowel').click
+            cy.contains('Vowel').click();
+            cy.contains('Your letters are:');
         });
     });
 });
